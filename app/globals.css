@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Tema claro "papel" com acento coral — distinto dos outros 4 projetos */
+  --color-ink: #2b2420;
+  --color-accent: #f2552c; /* coral */
+  --color-paper: #fffaf5;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  color: var(--color-ink);
+  background:
+    radial-gradient(70% 50% at 50% -10%, #ffe9df 0%, transparent 65%),
+    var(--color-paper);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: #ffd2c2;
+  color: #2b2420;
+}
